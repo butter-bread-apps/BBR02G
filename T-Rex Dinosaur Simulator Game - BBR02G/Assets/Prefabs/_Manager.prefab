@@ -5,15 +5,13 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 462430}
-  - 114: {fileID: 11477550}
-  - 114: {fileID: 11419210}
-  - 114: {fileID: 11488874}
-  - 114: {fileID: 11400950}
-  - 114: {fileID: 11460952}
-  - 114: {fileID: 11410796}
+  - component: {fileID: 462430}
+  - component: {fileID: 11477550}
+  - component: {fileID: 11419210}
+  - component: {fileID: 11488874}
+  - component: {fileID: 11410796}
   m_Layer: 0
   m_Name: _Manager
   m_TagString: Untagged
@@ -33,17 +31,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
---- !u!114 &11400950
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fb36ea200888947a985f8b2b4f838ede, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &11410796
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -80,17 +68,6 @@ MonoBehaviour:
   powerPanel: {fileID: 0}
   SaveLifePanel: {fileID: 0}
   saveButton: {fileID: 0}
---- !u!114 &11460952
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 101470}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f253d4eb722a67e42a48bacea49479a5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &11477550
 MonoBehaviour:
   m_ObjectHideFlags: 1

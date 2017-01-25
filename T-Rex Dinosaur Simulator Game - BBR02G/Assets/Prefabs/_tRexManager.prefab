@@ -1,0 +1,126 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1867891971780364}
+  m_IsPrefabParent: 1
+--- !u!1 &1867891971780364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4125777076347976}
+  - component: {fileID: 114169110130312772}
+  - component: {fileID: 114981567489734958}
+  - component: {fileID: 114446305082030638}
+  - component: {fileID: 114027845879497354}
+  m_Layer: 0
+  m_Name: _tRexManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4125777076347976
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.04, y: -3.06, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114027845879497354
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45eb77dcc9e46234e8daf604e2353bd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameID: 108368
+  buttonBon: {fileID: 0}
+  bonusText: {fileID: 0}
+--- !u!114 &114169110130312772
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e9faa7a4bc2f634792dd3ec070362ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buildPrefs:
+  - {fileID: 449962, guid: 58c25a420e6882147886b21744a277c7, type: 2}
+  obstraclePrefs:
+  - {fileID: 4982561066797348, guid: dabfd069eb7e68f4babfa12ae2732063, type: 2}
+  floorPref: {fileID: 4192857876777118, guid: 8fafc552a8ceaee469f34e9c9c0d9c4a, type: 2}
+  tPlayer: {fileID: 0}
+--- !u!114 &114446305082030638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9622327ceac850a47900372ead7bf63e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  backgroundClip: {fileID: 8300000, guid: 36e9854082dd9aa4a99cc30b9a463fd9, type: 3}
+  musicClips:
+  - audioClip: {fileID: 8300000, guid: 7b963a85838051049991efddc90fbc41, type: 3}
+    soundName: Coin
+    volume: 0.95
+  - audioClip: {fileID: 8300000, guid: 15cd07bc2219ae342a4233c9afa96dbc, type: 3}
+    soundName: Hit
+    volume: 1
+  - audioClip: {fileID: 8300000, guid: ccf4cd9e8c0212e4b8c0aba2a2d67bed, type: 3}
+    soundName: Power
+    volume: 0.95
+  - audioClip: {fileID: 8300000, guid: 364230d4c07fba249b6f9c084fc5f707, type: 3}
+    soundName: Swipe
+    volume: 1
+  - audioClip: {fileID: 8300000, guid: e4b4cc3af9a56b449a87e105de02adcc, type: 3}
+    soundName: Guard
+    volume: 1
+--- !u!114 &114981567489734958
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 215f14ce64d799d4386ffa2dd7b2da44, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  coine: {fileID: 0}
+  distance: {fileID: 0}
+  goCoin: {fileID: 0}
+  goScore: {fileID: 0}
+  goBScore: {fileID: 0}
+  lamlCount: {fileID: 0}
+  MainMenuPanel: {fileID: 0}
+  GameOverPanel: {fileID: 0}
+  powerPanel: {fileID: 0}
+  SaveLifePanel: {fileID: 0}
+  saveButton: {fileID: 0}

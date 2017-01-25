@@ -85,11 +85,12 @@ public class AnimationManager : MonoBehaviour {
 
     public void Run()
 	{
+        //EDITED, TODO, FIND, ANIMATION EDITION, RUN ANIMATION
 		
 		if (!Controller.iFly) 
 		{
 			speed_Run = Controller.speed * runAnimation.speedAnimation;
-			animationComponent [runAnimation.animation.name].speed = speed_Run;
+			animationComponent [runAnimation.animation.name].speed = 1;
             animationComponent.Play(runAnimation.animation.name);
         }
 	}
