@@ -2420,7 +2420,7 @@ MonoBehaviour:
   magnetObject: {fileID: 1011320296009880}
   lTap: {fileID: 1811577837749130}
   rTap: {fileID: 1577977371201062}
-  swipeDistance: 2
+  swipeDistance: 5
   speedAddDistance: 2.5
   raycast: {fileID: 4755584316545526}
   iRoll: 0
@@ -2742,7 +2742,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 2
   m_Height: 8.02
-  m_Radius: 0.5
+  m_Radius: 0.8
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08

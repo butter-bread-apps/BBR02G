@@ -9,7 +9,7 @@ public class ADS_Unity : MonoBehaviour {
 	private int BookCount, EmeraldCount, PipeCount, GoldCount;
 
 
-	[SerializeField] string gameID = "108368";
+	[SerializeField] string gameID = "e12193a50e942e648b6ab41290da256aac43663ee596cdbf2ddee81d8fd6dcc6";
     public GameObject buttonBon;
     public Text bonusText;
 	private string bonusName;
