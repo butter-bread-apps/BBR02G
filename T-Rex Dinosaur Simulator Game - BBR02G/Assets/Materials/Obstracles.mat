@@ -124,4 +124,4 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _QOffset
-      second: {r: -21.972317, g: -1.3002264, b: 0, a: 0}
+      second: {r: -20.598888, g: 2.9131844, b: 0, a: 0}

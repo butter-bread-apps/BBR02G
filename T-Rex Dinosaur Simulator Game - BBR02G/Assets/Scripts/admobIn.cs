@@ -5,7 +5,7 @@ using System.Collections;
 public class admobIn : MonoBehaviour {
 
 	private const string AD_UNIT_ID = "pub-3605548999061027";
-	private const string INTERSTITIAL_ID = "ca-app-pub-3094238402358268/7602788634";
+	private const string INTERSTITIAL_ID = "ca-app-pub-3605548999061027/8207600197";
 	private AdMobPlugin admob;
 	private bool isShow;
     private int adNumber;
