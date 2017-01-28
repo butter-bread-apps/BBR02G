@@ -261,6 +261,10 @@ public class Menu : MonoBehaviour {
 
     }
 
+    public void isLeaderboards()
+    {
+        if (Social.Active.localUser.authenticated) { Social.Active.ShowLeaderboardUI(); }
+    }
     public void MagnetUp()
     {
         if (ProtectedPrefs.GetInt("Coins") >= 750 && magLevel == 0)

@@ -425,27 +425,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 11472608, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
-      value: 
-      objectReference: {fileID: 457984175}
-    - target: {fileID: 11460430, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
-      value: 
-      objectReference: {fileID: 457984175}
-    - target: {fileID: 11476998, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 457984175}
     - target: {fileID: 11480812, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 457984175}
-    - target: {fileID: 11458284, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+    - target: {fileID: 114275377986914568, guid: 6b9450552e45ea24d929184ff04e8cc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 457984175}
-    - target: {fileID: 11474506, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+    - target: {fileID: 11407692, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 457984175}
@@ -453,21 +442,34 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1180568560}
-    - target: {fileID: 11407692, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+    - target: {fileID: 11474506, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
       objectReference: {fileID: 457984175}
-    - target: {fileID: 22421090, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_SizeDelta.y
-      value: 132
-      objectReference: {fileID: 0}
-    - target: {fileID: 22421090, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.06491852
-      objectReference: {fileID: 0}
-    - target: {fileID: 22421090, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
-      propertyPath: m_AnchoredPosition.x
-      value: 304.99997
+    - target: {fileID: 11458284, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 457984175}
+    - target: {fileID: 114141347966395636, guid: 6b9450552e45ea24d929184ff04e8cc9,
+        type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 457984175}
+    - target: {fileID: 11476998, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 457984175}
+    - target: {fileID: 11460430, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 457984175}
+    - target: {fileID: 11472608, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
+      value: 
+      objectReference: {fileID: 457984175}
+    - target: {fileID: 166124, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}

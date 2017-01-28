@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 114981567489734958}
   - component: {fileID: 114446305082030638}
   - component: {fileID: 114027845879497354}
+  - component: {fileID: 114387948259102304}
   m_Layer: 0
   m_Name: _tRexManager
   m_TagString: Untagged
@@ -85,6 +86,17 @@ MonoBehaviour:
   - {fileID: 4970812481925830, guid: 8e74fe464e0caf649923ccda4a63402d, type: 2}
   floorPref: {fileID: 4982561066797348, guid: dabfd069eb7e68f4babfa12ae2732063, type: 2}
   tPlayer: {fileID: 0}
+--- !u!114 &114387948259102304
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0936b5f32c55b5843b2cc0e6d91d6cc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &114446305082030638
 MonoBehaviour:
   m_ObjectHideFlags: 1

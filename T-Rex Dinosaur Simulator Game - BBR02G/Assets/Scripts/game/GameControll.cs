@@ -23,6 +23,7 @@ public class GameControll : MonoBehaviour {
 
     void Start()
     {
+        
         coin = 0;
         changeScorecolor = false;
         distance.color = new Color(1, 1, 1, 1);
@@ -135,9 +136,52 @@ public class GameControll : MonoBehaviour {
         ProtectedPrefs.SetInt("Coins", lcoin + coin);
         goCoin.text = "Coins: " + coin.ToString();
         goScore.text = "Score: " + Controller.Distance.ToString("f0") + "0";
+        if(ProtectedPrefs.GetInt("Coins") > 100)
+        {
+            Social.ReportProgress("CgkIu86qr5EIEAIQAQ",100, (bool success) =>
+            {
+                
+            });
+        }else if(ProtectedPrefs.GetInt("Coins") > 250) {
+            Social.ReportProgress("CgkIu86qr5EIEAIQAg", 100, (bool success) =>
+            {
+
+            });
+        }else if (ProtectedPrefs.GetInt("Coins") > 500)
+        {
+            
+                 Social.ReportProgress("CgkIu86qr5EIEAIQAw", 100, (bool success) =>
+                 {
+
+                 });
+        }else if(ProtectedPrefs.GetInt("Coins") > 750)
+        {
+            Social.ReportProgress("CgkIu86qr5EIEAIQBA", 100, (bool success) =>
+            {
+
+            });
+
+        }else if(ProtectedPrefs.GetInt("Coins") > 1000)
+        {
+            Social.ReportProgress("CgkIu86qr5EIEAIQBQ", 100, (bool success) =>
+            {
+
+            });
+        }
+
+        Social.ReportScore( ProtectedPrefs.GetInt("Coins"),"CgkIu86qr5EIEAIQBg", (bool success) =>
+        {
+
+        });
+
+
         if (Controller.Distance > ProtectedPrefs.GetFloat("HighScore"))
         {
             ProtectedPrefs.SetFloat("HighScore", Controller.Distance);
+            Social.ReportScore(ProtectedPrefs.GetInt("HighScore"), "CgkIu86qr5EIEAIQBw", (bool success) =>
+            {
+
+            });
         }
         if (ProtectedPrefs.HasKey("HighScore"))
         {
@@ -175,5 +219,10 @@ public class GameControll : MonoBehaviour {
     {
         pause = false;
         SceneManager.LoadScene("menu");
+    }
+
+    public void isLeaderboards()
+    {
+        if (Social.Active.localUser.authenticated) { Social.Active.ShowLeaderboardUI(); }
     }
 }

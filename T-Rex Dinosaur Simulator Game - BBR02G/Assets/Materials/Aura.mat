@@ -121,7 +121,7 @@ Material:
       second: {r: 0, g: 0, b: 0, a: 1}
     - first:
         name: _QOffset
-      second: {r: -20.598888, g: 2.9131844, b: 0, a: 0}
+      second: {r: -19.151842, g: -1.3192109, b: 0, a: 0}
     - first:
         name: _TintColor
       second: {r: 1, g: 0.9724138, b: 0.75, a: 0.341}

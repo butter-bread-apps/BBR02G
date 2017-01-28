@@ -5,7 +5,7 @@
 	using UnityEngine.UI;
 	using System.Collections;
 	using System.Collections.Generic;
-	using Facebook.MiniJSON;
+	using MiniJSON;
 
 	internal class FBManager : MonoBehaviour{
         [HideInInspector]
@@ -126,12 +126,12 @@
 		}
 
 		public void QueryScores(){
-			FB.API ("/app/scores?fields=score,user.limit(20)", HttpMethod.GET, ScoreCallack);
+			FB.API ("/app/scores?fields=score,user.limit(20)", HttpMethod.GET, ScoreCallBack);
 
 		}
 
-		private void ScoreCallack(IResult result){
-			scorelist = Util.DeserializeScores(result.RawResult);
+		private void ScoreCallBack(IResult result){
+			scorelist = Json.Deserialize (result.RawResult) as List<object>;
 			print (result.RawResult);
 
 			foreach (Transform child in ScrolList.transform) {
@@ -157,9 +157,9 @@
 				Transform TheUserAvatar = ScrolPanel.transform.Find("UserAvatar");
 				Image uAvatar = TheUserAvatar.GetComponent<Image>();
 
-				FB.API (Util.GetPictureURL(user["id"].ToString(), 128,128), HttpMethod.GET, delegate(IGraphResult pictureResult)
+				FB.API (GetPictureURL(user["id"].ToString(), 128,128), HttpMethod.GET, delegate(IGraphResult pictureResult)
 					{
-						string imageUrl = Util.DeserializePictureURLString(pictureResult.RawResult);
+						string imageUrl = DeserializePictureURLString(pictureResult.RawResult);
 						StartCoroutine(LoadPictureEnumerator(imageUrl,pictureTexture =>
 							{
 								uAvatar.sprite = Sprite.Create (pictureTexture, new Rect(0,0,128,128), new Vector2(0,0));
