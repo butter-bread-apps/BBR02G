@@ -193,7 +193,7 @@ PlayerSettings:
   appleDeveloperTeamID: 
   AndroidTargetDevice: 3
   AndroidSplashScreenScale: 0
-  androidSplashScreen: {fileID: 2800000, guid: 81cdd6ca87b2f3542a9ccb4d10fd789f, type: 3}
+  androidSplashScreen: {fileID: 2800000, guid: 09251e428977be443b7a12d906c7819e, type: 3}
   AndroidKeystoreName: D:/UnityGames/BBR02G/T-Rex Dinosaur Simulator Game - BBR02G/user.keystore
   AndroidKeyaliasName: bbapps
   AndroidTVCompatibility: 0
@@ -209,7 +209,7 @@ PlayerSettings:
   - m_BuildTarget: 
     m_Icons:
     - serializedVersion: 2
-      m_Icon: {fileID: 2800000, guid: 9f669f1e0e36f3f4cb39c10b595e7078, type: 3}
+      m_Icon: {fileID: 2800000, guid: 09251e428977be443b7a12d906c7819e, type: 3}
       m_Width: 128
       m_Height: 128
   m_BuildTargetBatching:
@@ -470,7 +470,7 @@ PlayerSettings:
   cloudServicesEnabled:
     Build: 1
     UNet: 1
-  cloudProjectId: 5bc24f06-9b6b-4454-b977-c538e78a31eb
-  projectName: DESERT PRINCE
-  organizationId: vade-e41bddee-c3c2-4503-8a32-141cb124b202
+  cloudProjectId: 
+  projectName: 
+  organizationId: 
   cloudEnabled: 0

@@ -55,7 +55,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45eb77dcc9e46234e8daf604e2353bd9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameID: 108368
+  gameID: e12193a50e942e648b6ab41290da256aac43663ee596cdbf2ddee81d8fd6dcc6
   buttonBon: {fileID: 0}
   bonusText: {fileID: 0}
 --- !u!114 &114169110130312772
