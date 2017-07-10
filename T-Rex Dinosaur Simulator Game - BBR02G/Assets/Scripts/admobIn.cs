@@ -1,29 +1,29 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-[RequireComponent(typeof(AdMobPlugin))]
+//[RequireComponent(typeof(AdMobPlugin))]
 public class admobIn : MonoBehaviour {
 
 	private const string AD_UNIT_ID = "pub-3605548999061027";
 	private const string INTERSTITIAL_ID = "ca-app-pub-3605548999061027/8207600197";
-	private AdMobPlugin admob;
+	//private AdMobPlugin admob;
 	private bool isShow;
     private int adNumber;
 	void Start() {
         adNumber = Random.Range(0, 2);
-        admob = GetComponent<AdMobPlugin>();
-		admob.CreateBanner(adUnitId: AD_UNIT_ID,
-			adSize: AdMobPlugin.AdSize.SMART_BANNER,
-			isTopPosition: true,
+      //  admob = GetComponent<AdMobPlugin>();
+		//admob.CreateBanner(adUnitId: AD_UNIT_ID,
+		//	adSize: AdMobPlugin.AdSize.SMART_BANNER,
+		/*	isTopPosition: true,
 			interstitialId: INTERSTITIAL_ID,
-			isTestDevice: false);
-		admob.RequestAd();
+			isTestDevice: false);*/
+		//admob.RequestAd();
         #if !UNITY_EDITOR
 		    if(adNumber == 0) admob.RequestInterstitial();
         #endif
     }
 
-    void OnEnable() {
+   /* void OnEnable() {
 		AdMobPlugin.AdClosed += () => { Debug.Log ("AdClosed"); };
 		AdMobPlugin.AdFailedToLoad += () => { Debug.Log ("AdFailedToLoad"); };
 		AdMobPlugin.AdLeftApplication += () => { Debug.Log ("AdLeftApplication"); };
@@ -36,13 +36,13 @@ public class admobIn : MonoBehaviour {
 
 		AdMobPlugin.InterstitialLoaded += () => { isShow = false; };
     }
-
+    */
 		
 
 	void Update(){
 		if(isShow == false && GameControll.showAd) {
             if (adNumber == 0) {
-                admob.ShowInterstitial();
+                //admob.ShowInterstitial();
                 Debug.Log("Bunner!!");
             } 
             isShow = true;

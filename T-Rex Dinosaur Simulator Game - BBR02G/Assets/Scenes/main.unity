@@ -199,9 +199,27 @@ Prefab:
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 11433690, guid: f3c0e7da3565849478c739e447823cd0, type: 2}
+    - {fileID: 11416074, guid: f3c0e7da3565849478c739e447823cd0, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: f3c0e7da3565849478c739e447823cd0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &655372731 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 182470, guid: f3c0e7da3565849478c739e447823cd0, type: 2}
+  m_PrefabInternal: {fileID: 655372730}
+--- !u!114 &655372732
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 655372731}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b571ebea674d95b43b3c57dffe41aea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialVideoRequest: 
 --- !u!1001 &898194094
 Prefab:
   m_ObjectHideFlags: 0
@@ -260,12 +278,6 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1609101937}
   m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
---- !u!114 &1180568560 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114027845879497354, guid: 7c5aa9ce90f5b34469d8ef17004e9ee7,
-    type: 2}
-  m_PrefabInternal: {fileID: 1475439017}
-  m_Script: {fileID: 11500000, guid: 45eb77dcc9e46234e8daf604e2353bd9, type: 3}
 --- !u!1001 &1475439017
 Prefab:
   m_ObjectHideFlags: 0
@@ -468,7 +480,7 @@ Prefab:
     - target: {fileID: 11425708, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1180568560}
+      objectReference: {fileID: 655372732}
     - target: {fileID: 11474506, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Target
       value: 
@@ -500,11 +512,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 22421090, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_SizeDelta.y
-      value: 132
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 22421090, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 304.99997
+      value: 305
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425708, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ShowVideo
+      objectReference: {fileID: 0}
+    - target: {fileID: 11425708, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6b9450552e45ea24d929184ff04e8cc9, type: 2}

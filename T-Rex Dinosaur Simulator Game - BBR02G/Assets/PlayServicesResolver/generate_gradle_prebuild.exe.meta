@@ -1,7 +1,10 @@
 fileFormatVersion: 2
-guid: 57a4d26d729d6ed4e82a0197cbebb426
-timeCreated: 1499693865
-licenseType: Free
+guid: c2ebea73530f4801aa5cedf7ff3e5ff6
+labels:
+- gvh
+- gvh_v1.2.20.0
+timeCreated: 1487291130
+licenseType: Pro
 DefaultImporter:
   userData: 
   assetBundleName: 
