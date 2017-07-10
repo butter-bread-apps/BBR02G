@@ -63,18 +63,7 @@ public class Menu : MonoBehaviour {
         bAudio.mute = false;
     }
 
-    public void FbButton() {
-        fb = !fb;
-        if (!fb)
-        {
-            fbWindow.SetActive(false);
-        }
-        if (!Facebook.Unity.FBManager.login)
-        {
-            fbNotLog.SetActive(true);
-        }
-    }
-
+  
     public void Shop() {
         coins.text = ProtectedPrefs.GetInt("Coins").ToString();
     }
@@ -99,13 +88,7 @@ public class Menu : MonoBehaviour {
             cameraSecond.SetActive(false);
             iapPanel.SetActive(false);
         }
-        if (!Facebook.Unity.FBManager.login)
-        {
-            fbWindow.SetActive(false);
-        }
-        else {
-            fbNotLog.SetActive(false);
-        }
+       
 
         if (ProtectedPrefs.GetInt("bunner") == 0)
         {

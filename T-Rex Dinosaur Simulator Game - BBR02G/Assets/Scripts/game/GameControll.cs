@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using Facebook.Unity;
 
 public class GameControll : MonoBehaviour {
 
@@ -191,12 +190,7 @@ public class GameControll : MonoBehaviour {
         {
             goBScore.text = "Best Score: " + Controller.Distance.ToString("f0") + "0";
         }
-        if (FB.IsLoggedIn)
-        {
-            #if !UNITY_EDITOR
-			    StartCoroutine (Facebook.Unity.FBManager.SetScore ());
-            #endif
-         }
+       
     }
 
     public void isPause() {

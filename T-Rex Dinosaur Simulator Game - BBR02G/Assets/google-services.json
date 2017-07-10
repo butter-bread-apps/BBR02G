@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "279540574011",
+    "firebase_url": "https://t-rex-dinosaur-simulator-14e4c.firebaseio.com",
+    "project_id": "t-rex-dinosaur-simulator-14e4c",
+    "storage_bucket": "t-rex-dinosaur-simulator-14e4c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:279540574011:android:5056abc2fe8959ae",
+        "android_client_info": {
+          "package_name": "com.bbapps.trex.dinosaur.simulator"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "279540574011-b8mailncm9bntcgdj9u20gehpfqc4nef.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZxFjZIyiXouV9ee7bwlnYbKGEfg4Y23A"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
