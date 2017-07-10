@@ -2,10 +2,11 @@
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class GameControll : MonoBehaviour {
+public class GameControll : MonoBehaviour
+{
 
     public static int coin;
-	public static bool pause;
+    public static bool pause;
     public Text coine, distance;
     public Text goCoin, goScore, goBScore, lamlCount;
     public GameObject MainMenuPanel, GameOverPanel, powerPanel, SaveLifePanel;
@@ -22,7 +23,7 @@ public class GameControll : MonoBehaviour {
 
     void Start()
     {
-        
+
         coin = 0;
         changeScorecolor = false;
         distance.color = new Color(1, 1, 1, 1);
@@ -34,7 +35,8 @@ public class GameControll : MonoBehaviour {
         {
             lcoin = ProtectedPrefs.GetInt("Coins");
         }
-        else {
+        else
+        {
             lcoin = 0;
         }
         GetLamp();
@@ -58,11 +60,12 @@ public class GameControll : MonoBehaviour {
                 loadS = true;
             }
         }
-        
+
         if (itemAbsorb.getLamp) GetLamp();
         coine.text = coin.ToString();
         distance.text = Controller.Distance.ToString("00000000") + "0";
-        if (Controller.Distance > 10 && Controller.Distance > ProtectedPrefs.GetFloat("HighScore") && !changeScorecolor) {
+        if (Controller.Distance > 10 && Controller.Distance > ProtectedPrefs.GetFloat("HighScore") && !changeScorecolor)
+        {
             cc += Time.deltaTime;
             if (cc < 1)
             {
@@ -80,12 +83,13 @@ public class GameControll : MonoBehaviour {
             {
                 distance.color = new Color(1, 1, 1, 1);
             }
-            else if(cc>2.5f){
+            else if (cc > 2.5f)
+            {
                 distance.color = new Color(1f, 0.92f, 0.016f, 1f);
                 cc = 0;
                 changeScorecolor = true;
             }
-            
+
         }
         if (Controller.iDie && ProtectedPrefs.GetInt("mLamp") < 1)
         {
@@ -119,7 +123,8 @@ public class GameControll : MonoBehaviour {
         {
             lCount = ProtectedPrefs.GetInt("mLamp");
         }
-        else {
+        else
+        {
             lCount = 0;
         }
         itemAbsorb.getLamp = false;
@@ -129,38 +134,43 @@ public class GameControll : MonoBehaviour {
 
     private void GameOver()
     {
-        showAd = true;
+        GetComponent<AdmobManager>().ShowVideo();
         GameOverPanel.SetActive(true);
         powerPanel.SetActive(false);
         ProtectedPrefs.SetInt("Coins", lcoin + coin);
         goCoin.text = "Coins: " + coin.ToString();
         goScore.text = "Score: " + Controller.Distance.ToString("f0") + "0";
-        if(ProtectedPrefs.GetInt("Coins") > 100)
+        if (ProtectedPrefs.GetInt("Coins") > 100)
         {
-            Social.ReportProgress("CgkIu86qr5EIEAIQAQ",100, (bool success) =>
-            {
-                
-            });
-        }else if(ProtectedPrefs.GetInt("Coins") > 250) {
+            Social.ReportProgress("CgkIu86qr5EIEAIQAQ", 100, (bool success) =>
+             {
+
+             });
+        }
+        else if (ProtectedPrefs.GetInt("Coins") > 250)
+        {
             Social.ReportProgress("CgkIu86qr5EIEAIQAg", 100, (bool success) =>
             {
 
             });
-        }else if (ProtectedPrefs.GetInt("Coins") > 500)
+        }
+        else if (ProtectedPrefs.GetInt("Coins") > 500)
         {
-            
-                 Social.ReportProgress("CgkIu86qr5EIEAIQAw", 100, (bool success) =>
-                 {
 
-                 });
-        }else if(ProtectedPrefs.GetInt("Coins") > 750)
+            Social.ReportProgress("CgkIu86qr5EIEAIQAw", 100, (bool success) =>
+            {
+
+            });
+        }
+        else if (ProtectedPrefs.GetInt("Coins") > 750)
         {
             Social.ReportProgress("CgkIu86qr5EIEAIQBA", 100, (bool success) =>
             {
 
             });
 
-        }else if(ProtectedPrefs.GetInt("Coins") > 1000)
+        }
+        else if (ProtectedPrefs.GetInt("Coins") > 1000)
         {
             Social.ReportProgress("CgkIu86qr5EIEAIQBQ", 100, (bool success) =>
             {
@@ -168,7 +178,7 @@ public class GameControll : MonoBehaviour {
             });
         }
 
-        Social.ReportScore( ProtectedPrefs.GetInt("Coins"),"CgkIu86qr5EIEAIQBg", (bool success) =>
+        Social.ReportScore(ProtectedPrefs.GetInt("Coins"), "CgkIu86qr5EIEAIQBg", (bool success) =>
         {
 
         });
@@ -190,10 +200,11 @@ public class GameControll : MonoBehaviour {
         {
             goBScore.text = "Best Score: " + Controller.Distance.ToString("f0") + "0";
         }
-       
+
     }
 
-    public void isPause() {
+    public void isPause()
+    {
         pause = true;
         al.enabled = false;
     }

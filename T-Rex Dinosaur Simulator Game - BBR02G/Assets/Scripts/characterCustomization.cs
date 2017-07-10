@@ -20,7 +20,7 @@ public class characterCustomization : MonoBehaviour {
     }
 
     public void Customize() {
-        if (ProtectedPrefs.GetInt("Player") == 1)
+       if (ProtectedPrefs.GetInt("Player") == 1)
         {
             characters[0].SetActive(true);
             characters[1].SetActive(false);
@@ -91,7 +91,7 @@ public class characterCustomization : MonoBehaviour {
             belt[2].SetActive(false);
             MaskAnonim.SetActive(false);
         }
-
+        
         if (ProtectedPrefs.GetInt("Helmet") == 1)
         {
             if (ProtectedPrefs.GetInt("Player") != 3)

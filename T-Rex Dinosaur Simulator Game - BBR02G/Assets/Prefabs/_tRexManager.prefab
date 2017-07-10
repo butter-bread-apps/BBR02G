@@ -22,8 +22,8 @@ GameObject:
   - component: {fileID: 114169110130312772}
   - component: {fileID: 114981567489734958}
   - component: {fileID: 114446305082030638}
-  - component: {fileID: 114027845879497354}
   - component: {fileID: 114387948259102304}
+  - component: {fileID: 114737978258747716}
   m_Layer: 0
   m_Name: _tRexManager
   m_TagString: Untagged
@@ -44,20 +44,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &114027845879497354
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1867891971780364}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 45eb77dcc9e46234e8daf604e2353bd9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameID: e12193a50e942e648b6ab41290da256aac43663ee596cdbf2ddee81d8fd6dcc6
-  buttonBon: {fileID: 0}
-  bonusText: {fileID: 0}
 --- !u!114 &114169110130312772
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -125,6 +111,18 @@ MonoBehaviour:
   - audioClip: {fileID: 8300000, guid: e4b4cc3af9a56b449a87e105de02adcc, type: 3}
     soundName: Guard
     volume: 1
+--- !u!114 &114737978258747716
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1867891971780364}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b571ebea674d95b43b3c57dffe41aea7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialVideoRequest: ca-app-pub-3605548999061027/3912347799
 --- !u!114 &114981567489734958
 MonoBehaviour:
   m_ObjectHideFlags: 1

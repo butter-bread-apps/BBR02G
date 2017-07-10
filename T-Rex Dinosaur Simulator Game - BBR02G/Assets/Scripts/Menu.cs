@@ -6,9 +6,8 @@ public class Menu : MonoBehaviour {
     public GameObject mainPanel;
     public GameObject quitPanel;
     public AudioSource bAudio;
-    public GameObject uMuteBtn, muteBtn, fbWindow, fbNotLog, leaderBoard, storeWindow, cameraSecond, iapPanel;
+    public GameObject uMuteBtn, muteBtn,leaderBoard, storeWindow, cameraSecond, iapPanel;
     public Animator animator;
-    bool fb;
     public Text coins;
     private int magLevel;
     private int botLevel;
@@ -27,7 +26,6 @@ public class Menu : MonoBehaviour {
     public Text tnoAds;
 
     void Start() {
-        fb = false;
         if (ProtectedPrefs.HasKey("Mute")) {
             if (ProtectedPrefs.GetInt("Mute") == 0)
             {
@@ -81,8 +79,7 @@ public class Menu : MonoBehaviour {
         if (Input.GetKey(KeyCode.Escape)) {
             mainPanel.SetActive(false);
             quitPanel.SetActive(true);
-            fbWindow.SetActive(false);
-            fbNotLog.SetActive(false);
+          
             leaderBoard.SetActive(false);
             storeWindow.SetActive(false);
             cameraSecond.SetActive(false);

@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 47
+  controlID: 51
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 48
+  controlID: 66
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 49
+  controlID: 67
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -329,10 +329,10 @@ MonoBehaviour:
   m_ZoomArea:
     m_HRangeLocked: 0
     m_VRangeLocked: 0
-    m_HBaseRangeMin: -400
-    m_HBaseRangeMax: 400
-    m_VBaseRangeMin: -640
-    m_VBaseRangeMax: 640
+    m_HBaseRangeMin: -461.5
+    m_HBaseRangeMax: 461.5
+    m_VBaseRangeMin: -319
+    m_VBaseRangeMax: 319
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -351,7 +351,7 @@ MonoBehaviour:
       y: 17
       width: 923
       height: 638
-    m_Scale: {x: 0.4984375, y: 0.4984375}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 461.5, y: 319}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -359,12 +359,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -925.89343
-      y: -640
-      width: 1851.7869
-      height: 1280
+      x: -461.5
+      y: -319
+      width: 923
+      height: 638
     m_MinimalGUI: 1
-  m_defaultScale: 0.4984375
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 923, y: 655}
@@ -401,26 +401,26 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: c078ffff3e7affff00c0ffff0cc0ffffc0c7ffff1ac9ffff70caffffd4caffffd8caffff1ee8ffff26ebffffe0fbffff00000000d0350000f03500009a4c0000b24c0000
+    m_ExpandedIDs: 5eeaffff3cebffff9ceeffffa4eeffffe0fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: GameCanvas
-      m_OriginalName: GameCanvas
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -34624
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - main
+  - menu
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -451,14 +451,14 @@ MonoBehaviour:
     width: 923
     height: 655
   m_SceneLighting: 1
-  lastFramingTime: 3628.7022845997612
-  m_2DMode: 1
+  lastFramingTime: 4213.836189428714
+  m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 578.1474, y: 636.9005, z: 0}
+    m_Target: {x: 2.8671753, y: 1.1460285, z: -3.5203133}
     speed: 2
-    m_Value: {x: 578.1474, y: 636.9005, z: 0}
+    m_Value: {x: 2.8671753, y: 1.1460285, z: -3.5203133}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -473,27 +473,27 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
     yGrid:
-      m_Target: 0
-      speed: 2
-      m_Value: 0
-    zGrid:
       m_Target: 1
       speed: 2
       m_Value: 1
+    zGrid:
+      m_Target: 0
+      speed: 2
+      m_Value: 0
   m_Rotation:
-    m_Target: {x: 0, y: 0, z: 0, w: 1}
+    m_Target: {x: -0.2637879, y: 0.0497415, z: -0.013623058, w: -0.963201}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.2637879, y: 0.049741503, z: -0.013623058, w: -0.96320105}
   m_Size:
-    m_Target: 1312.2681
+    m_Target: 40.144245
     speed: 2
-    m_Value: 1312.2681
+    m_Value: 40.144245
   m_Ortho:
-    m_Target: 1
+    m_Target: 0
     speed: 2
-    m_Value: 1
-  m_LastSceneViewRotation: {x: -0.069567636, y: 0.74040556, z: -0.07758513, w: -0.6640335}
-  m_LastSceneViewOrtho: 1
+    m_Value: 0
+  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
   m_LastLockedObject: {fileID: 0}
@@ -664,34 +664,34 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 65
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/PlayServicesResolver
   m_LastFoldersGridSize: 65
   m_LastProjectPath: C:\Users\lopez\Documents\BBR02G\T-Rex Dinosaur Simulator Game
     - BBR02G
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 1067}
-    m_SelectedIDs: 86290000
-    m_LastClickedID: 10630
-    m_ExpandedIDs: 00000000702700001428000016280000382800005a280000fe290000842a0000002b0000082b00006c2b0000c62b0000f22c0000202d0000282d0000622e0000bc2e000072300000e4310000e6310000e8310000ea310000ec310000ee3100009434000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 159}
+    m_SelectedIDs: e2270000
+    m_LastClickedID: 10210
+    m_ExpandedIDs: 00000000e227000088280000a8280000cc280000702a0000802b0000e22b00003a2c0000fe2c00007a2d00009a2d0000a82d00007c2e0000e62e000004310000423c0000443c0000463c0000483c00004a3c00004c3c00004e3c0000503c0000523c0000543c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Mission
-      m_OriginalName: Mission
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10232
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 10}
     m_SearchString: 
@@ -705,7 +705,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 0000000070270000382800005a280000fe290000842a0000002b0000082b00006c2b0000c62b0000202d0000622e0000bc2e000072300000e4310000e6310000e8310000ea310000ec310000ee310000
+    m_ExpandedIDs: 00000000e227000088280000a8280000cc280000702a0000802b0000e22b00003a2c0000fe2c00007a2d00009a2d0000a82d00007c2e0000e62e000004310000423c0000443c0000463c0000483c00004a3c00004c3c00004e3c0000503c0000523c0000543c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -732,7 +732,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 0830fbff0005000002050000dc0500003206000030060000e8070000321d0000700900003a06000046c9000038060000000000003e0600006e1d0000661d000066060000380a0000a42df6ff6c060000a21d00002e290000dc2800007c290000d0aeffffc62d00005a2b00007c2f000088290000ca290000e62800006e2a0000c831f4ff72250000e2260000ac2600000ea8ffffe429000042c1f8ff2e2d0000802f000054250000cc260000fe260000b0310000ee3100002e2b0000c22c0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Advertisements;
+//using UnityEngine.Advertisements;
 using System.Collections;
 using UnityEngine.UI;
 
@@ -19,7 +19,7 @@ public class ADS_Unity : MonoBehaviour {
 
 	void Awake()
 	{
-		Advertisement.Initialize (gameID, false);
+	//	Advertisement.Initialize (gameID, false);
 		generated = false;
 	}
     
@@ -65,20 +65,20 @@ public class ADS_Unity : MonoBehaviour {
 	public void ShowAd(string zone = "")
 	{
         #if UNITY_EDITOR
-          StartCoroutine(WaitForAd());
+       //   StartCoroutine(WaitForAd());
         #endif
 
         if (string.Equals(zone, ""))
             zone = null;
 
-        ShowOptions options = new ShowOptions();
-        options.resultCallback = AdCallbackhandler;
+     //   ShowOptions options = new ShowOptions();
+      //  options.resultCallback = AdCallbackhandler;
 
-        if (Advertisement.IsReady(zone))
-            Advertisement.Show(zone, options);
+      //  if (Advertisement.IsReady(zone))
+        //    Advertisement.Show(zone, options);
     }
 	
-	void AdCallbackhandler (ShowResult result)
+	/*void AdCallbackhandler (ShowResult result)
 	{
 		switch(result)
 		{
@@ -154,5 +154,5 @@ public class ADS_Unity : MonoBehaviour {
     public void GetCoin() {
         freecoin = true;
     }
-
+    */
 }
