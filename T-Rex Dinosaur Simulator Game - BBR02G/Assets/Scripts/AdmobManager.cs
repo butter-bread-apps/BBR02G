@@ -87,6 +87,7 @@ public class AdmobManager : MonoBehaviour {
     }
     public void HandleRewardBasedVideoRewarded(object sender, Reward args)
     {
+
         string type = args.Type;
         double amount = args.Amount;
         int convertedAmount = System.Convert.ToInt32(amount);
@@ -103,7 +104,6 @@ public class AdmobManager : MonoBehaviour {
             }
         }
         ProtectedPrefs.Save();
-
 
         print("User rewarded with: " + amount.ToString() + " " + type);
     }

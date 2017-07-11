@@ -13,7 +13,7 @@ public class PlayerSelectionMenu : MonoBehaviour
     public Text BuyButtonText;
     public GameObject IAP, choicesPanel;
     int currentChoice, confirmedChoice;
-    bool player2Unlocked, player3Unlocked;
+    bool player2Unlocked, player3Unlocked, player4Unlocked;
 
     public Text coinsText;
 
@@ -42,9 +42,13 @@ public class PlayerSelectionMenu : MonoBehaviour
         {
             player3Unlocked = true;
         }
+        if (ProtectedPrefs.HasKey("Player4Unlocked"))
+        {
+            player4Unlocked = true;
+        }
         BuyButton.gameObject.SetActive(true);
         currentChoice = 0;
-        targetImage.sprite = choiceImages[currentChoice];
+       targetImage.sprite = choiceImages[currentChoice];
         UpdateUI();
     }
 
@@ -148,7 +152,36 @@ public class PlayerSelectionMenu : MonoBehaviour
                 }
                 UpdateUI();
                 break;
+            case 3:
+                if (player3Unlocked)
+                {
+                    confirmedChoice = 3;
+                    ProtectedPrefs.SetInt("PlayerChoice", 3);
 
+                }
+                else if (!player3Unlocked)
+                {
+                    int currentCoins = ProtectedPrefs.GetInt("Coins");
+                    if (currentCoins >= prices[currentChoice])
+                    {
+                        currentCoins -= prices[currentChoice];
+                        Debug.Log(currentCoins);
+                        player3Unlocked = true;
+                        ProtectedPrefs.SetString("Player4Unlocked", "true");
+                        ProtectedPrefs.SetInt("PlayerChoice", 3);
+                        confirmedChoice = 3;
+                    }
+                    else
+                    {
+                        IAP.SetActive(true);
+                        choicesPanel.SetActive(false);
+                        BuyButton.gameObject.SetActive(false);
+                        // gameObject.SetActive(false);
+                    }
+
+                }
+                UpdateUI();
+                break;
 
 
         }
@@ -159,8 +192,7 @@ public class PlayerSelectionMenu : MonoBehaviour
     void UpdateUI()
     {
         coinsText.text = ProtectedPrefs.GetInt("Coins").ToString();
-        targetImage.sprite = choiceImages[currentChoice];
-
+          targetImage.sprite = choiceImages[currentChoice];
         if (currentChoice == confirmedChoice)
         {
             BuyButtonText.text = "Selected";
@@ -191,6 +223,14 @@ public class PlayerSelectionMenu : MonoBehaviour
 
                 }
 
+            }else if(currentChoice == 4)
+            {
+                if (player4Unlocked) BuyButtonText.text = "Select";
+                else
+                {
+                    BuyButtonText.text = prices[currentChoice].ToString();
+
+                }
             }
            
         }

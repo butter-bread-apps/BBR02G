@@ -22,4 +22,9 @@ public class CharacterMaterialSetter : MonoBehaviour
 
 
     }
+    public void UpdateSkin(int skin)
+    {
+        GetComponent<SkinnedMeshRenderer>().sharedMaterial = characterMaterials[skin];
+
+    }
 }
